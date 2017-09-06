@@ -4,7 +4,7 @@ Here you will find the unofficial documentation for the ServiceNow Service Porta
 
 Our goal is that the maintenance of this documentation will become a community effort. If you'd like to contribute, please feel free to submit a pull request from our repo on GitHub:
 
-https://github.com/newrocketinc/service-portal-documentation/
+https://github.com/newrocketinc/service-portal-docs/
 
 ### Contents
 
