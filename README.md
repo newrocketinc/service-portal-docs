@@ -34,9 +34,7 @@ https://github.com/newrocketinc/service-portal-docs/
 + [Form Widget](documentation/form.md)
 + [CMS and Service Portal](documentation/cms.md)
 + [SSO, Login & Redirect](documentation/sso_configuration.md)
-+ [Service Catalog Patch 2 Changes](documentation/service_catalog_patch2_changes.md)
 + [FAQ](documentation/faq.md)
-+ [Helsinki Patch Changelog](release-notes/helsinki.md)
 
 ___
 
