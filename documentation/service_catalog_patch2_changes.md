@@ -34,4 +34,4 @@ So, for example, suppose you have a Service Catalog variable with it's Question 
 ```
 
 That field will be rendered like this on the Service Catalog page:
-![Service Catalog HTML in Label](/assets/service_catalog_patch2_changes/label-html.png)
+![Service Catalog HTML in Label](../assets/service_catalog_patch2_changes/label-html.png)
