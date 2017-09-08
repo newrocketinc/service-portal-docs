@@ -30,7 +30,7 @@ Widgets might have [options](widget_options.md) that you can setup. You can defi
 <widget id="widget-cool-clock" options='{"zone": "America/Los_Angeles","title": "San Diego, CA"}'><widget>
 ```
 
-![Clock Options](/assets/widget_embedded/clock-options.png)
+![Clock Options](../assets/widget_embedded/clock-options.png)
 
 You don't necessarily need to provide options in the HTML template.
 
@@ -73,7 +73,7 @@ Each instance of the clock is provided a different timezone and title.
 
 > To see what options are configurable in the cool clock widget, open it in the widget editor. It uses the options object for the title, second hand color, and the timezone. This screenshot shows you where they're hiding.
 
-> ![Cool clock client script](/assets/widget_embedded/example_clock_options_1.png)
+> ![Cool clock client script](../assets/widget_embedded/example_clock_options_1.png)
 
 Edit the "Embedded clock" widget and replace with the following code blocks:
 
@@ -124,7 +124,7 @@ function() {
 ### Result  
 Each instance of the clock widget has a different timezone and title.
 
-![Embedded clock](/assets/widget_embedded/example_clock_options_2.png)
+![Embedded clock](../assets/widget_embedded/example_clock_options_2.png)
 
 ---
 
