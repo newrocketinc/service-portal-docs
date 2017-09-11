@@ -1,32 +1,50 @@
 ### $sp API
 Service Portal provides a set of convenience methods found on the global `$sp` object, which is available in any widget server script.
 
-| Method | Description |
-| :------ | :----------- |
-| [canReadRecord](#canReadRecord)(Mixed, *opt String*): boolean | Returns true if the user can read the specified GlideRecord. |
-| [getCatalogItem](#getCatalogItem)(String): Object | Returns a model and view model for a sc_cat_item or sc_cat_item_guide. |
-| [getDisplayValue](#getDisplayValue)(String): String | Returns a display value from a field on a record in this order: <br/>1. The widget's sp_instance* record<br/>2.
-| [getField](#getField)(GlideRecord, String): Object | Returns {display_value, label, type, value} for a given field on a GlideRecord. |
-| [getFields](#getFields)(GlideRecord, String): Array | Like getField Checks the specified field names, and returns a comma seperated list of valid names. |
-| [getFieldsObject](#getFieldsObject)(GlideRecord, String) | Checks the specified field names, and returns an object containing the valid names. |
-| [getForm](#getForm)(String table, String sys_id, /*Optional String*/ encodedQuery, /*Optional String*/ view)|Returns the form|
-| [getListColumns](#getListColumns)(String tableName, String view): |Returns a list of the specified table's columns in the specified view|
-| [getMenuItems](#getMenuItems)(String sys_id): Array | Returns the menu items for the specified instance |
-| [getMenuHREF](#getMenuHREF)(GlideRecord): String | Returns the (?id=) portion of the URL based on the sp_menu type. |
-| [getParameter](#getParameter)(String): Object | Returns the value of a given key from the query string or post body. |
-| [getPortalRecord](#getPortalRecord)(): GlideRecord  | Returns the portal's GlideRecord. |
-| [getRecord](#getRecord)(): Glide | Returns the GlideRecord for the current sp_instance\*. Returns null if the widget is embedded by another widget. |
-| [getRecordDisplayValues](#getRecordDisplayValues) (Object, GlideRecord, String): void | Copies display values for the specified field names from a GlideRecord into the data parameter. |
-| [getRecordElements](#getRecordElements)(Object, GlideRecord, String): void | Copies the value and display value for the specified field names from a GlideRecord into the data parameter. |
-| [getRecordValues](#getRecordValues) (Object, GlideRecord, String): void | Copies values for the specified field names from a GlideRecord into the data parameter. |
-| getStream(String, String): Object | Get the activity stream for a record. |
-| getUserInitials() | Returns the user's initials as a string. |
-| [getValue](#getValue)(String): Object | Like [getDisplayValue](#getDisplayValue) except that it returns the value instead of the display value. |
-| [getValues](#getValues)(Object, String): void | Copies values from the request or instance into the data parameter. |
-| [getValues](#getValues)(Object): void | Copies values from the widget's sp_instance GlideRecord into the data parameter. |
-| [getWidget](#getWidget)(String, Object): Object | Returns a widget model for embedding a widget inside another widget. |
-| getSCRecord(): Object | Returns sc_cat_item record for the portal's catalog with sys_class_name != sc_cat_item_wizard and active = true in the query. GlideRecord returned has not yet triggered the query. |
-| logStat(String type, String table, String id, *opt String comments*): void | Create a new entry in the `sp_log` table with a table name, a record sys_id from that name, and some type and optional comments. Handy for doing things like logging searches or visits to pages, etc. |
+| Method                                                                                                       | Description                                                                                                                                                                                 |
+| :----------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [canReadRecord](#canReadRecord)(Mixed, *opt String*): boolean                                                | Returns true if the user can read the specified GlideRecord. |
+| [getCatalogItem](#getCatalogItem)(String): Object                                                            | Returns a model and view model for a sc_cat_item or sc_cat_item_guide. |
+| [getDisplayValue](#getDisplayValue)(String): String                                                          | Returns a display value from a field on a record in this order: <br/>1. The widget's sp_instance* record<br/>2.
+| [getField](#getField)(GlideRecord, String): Object                                                           | Returns {display_value, label, type, value} for a given field on a GlideRecord. |
+| [getFields](#getFields)(GlideRecord, String): Array                                                          | Like getField Checks the specified field names, and returns a comma seperated list of valid names. |
+| [getFieldsObject](#getFieldsObject)(GlideRecord, String)                                                     | Checks the specified field names, and returns an object containing the valid names. |
+| [getForm](#getForm)(String table, String sys_id, /*Optional String*/ encodedQuery, /*Optional String*/ view) | Returns the form|
+| [getListColumns](#getListColumns)(String tableName, String view):                                            | Returns a list of the specified table's columns in the specified view|
+| [getMenuItems](#getMenuItems)(String sys_id): Array                                                          | Returns the menu items for the specified instance |
+| [getMenuHREF](#getMenuHREF)(GlideRecord): String                                                             | Returns the (?id=) portion of the URL based on the sp_menu type. |
+| [getParameter](#getParameter)(String): Object                                                                | Returns the value of a given key from the query string or post body. |
+| [getPortalRecord](#getPortalRecord)(): GlideRecord                                                           | Returns the portal's GlideRecord. |
+| [getRecord](#getRecord)(): Glide                                                                             | Returns the GlideRecord for the current sp_instance\*. Returns null if the widget is embedded by another widget. |
+| [getRecordDisplayValues](#getRecordDisplayValues) (Object, GlideRecord, String): void                        | Copies display values for the specified field names from a GlideRecord into the data parameter. |
+| [getRecordElements](#getRecordElements)(Object, GlideRecord, String): void                                   | Copies the value and display value for the specified field names from a GlideRecord into the data parameter. |
+| [getRecordValues](#getRecordValues) (Object, GlideRecord, String): void                                      | Copies values for the specified field names from a GlideRecord into the data parameter. |
+| getStream(String, String): Object                                                                            | Get the activity stream for a record. |
+| getUserInitials()                                                                                            | Returns the user's initials as a string. |
+| [getValue](#getValue)(String): Object                                                                        | Like [getDisplayValue](#getDisplayValue) except that it returns the value instead of the display value. |
+| [getValues](#getValues)(Object, String): void                                                                | Copies values from the request or instance into the data parameter. |
+| [getValues](#getValues)(Object): void                                                                        | Copies values from the widget's sp_instance GlideRecord into the data parameter. |
+| [getWidget](#getWidget)(String, Object): Object                                                              | Returns a widget model for embedding a widget inside another widget. |
+| getKBRecord(): Unkown                                                                                        | Not documented |
+| getKBCount(): Unkown                                                                                         | Not documented |
+| getKBCategoryArticles(): Unkown                                                                              | Not documented |
+| getKBTopicArticles(): Unkown                                                                                 | Not documented |
+| getKBTopCategoryID(): Unkown                                                                                 | Not documented |
+| getKBSiblingCategories(): Unkown                                                                             | Not documented |
+| getSCRecord(): Object                                                                                        | Returns sc_cat_item record for the portal's catalog with sys_class_name != sc_cat_item_wizard and active = true in the query. GlideRecord returned has not yet triggered the query. |
+| showCatalogPrices(): Unkown                                                                                  | Not documented |
+| saveVariables(): Unkown                                                                                      | Not documented |
+| buildThemeVariableModel(): Unkown                                                                            | Not documented |
+| getVariablesArray(): Unkown                                                                                  | Not documented |
+| getWidgetFromInstance(): Unkown                                                                              | Not documented |
+| getRecordVariablesArray(): Unkown                                                                            | Not documented |
+| getFilterBreadcrumbs(): Unkown                                                                               | Not documented |
+| logStat(String type, String table, String id, *opt String comments*): void                                   | Create a new entry in the `sp_log` table with a table name, a record sys_id from that name, and some type and optional comments. Handy for doing things like logging searches or visits to pages, etc. |
+| getInstanceRecord(): Unkown                                                                                  | Not documented |
+| log(): Unkown                                                                                                | Not documented |
+| saveRecord(): Unkown                                                                                         | Not documented |
+| logSearch(): Unkown                                                                                          | Not documented |
+
 
 
 <a name="getPortalRecord"></a> $sp.getPortalRecord()
