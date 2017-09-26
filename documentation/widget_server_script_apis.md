@@ -25,25 +25,25 @@ Service Portal provides a set of convenience methods found on the global `$sp` o
 | [getValues](#getValues)(Object, String): void                                                                | [Official Documentation](https://developer.servicenow.com/app.do#!/api_doc?v=jakarta&id=r_GSPS-getValues_O_S) Copies values from the request or instance into the data parameter. |
 | [getValues](#getValues)(Object): void                                                                        | [Official Documentation](https://developer.servicenow.com/app.do#!/api_doc?v=jakarta&id=r_GSPS-getValues_O_S) Copies values from the widget's sp_instance GlideRecord into the data parameter. |
 | [getWidget](#getWidget)(String, Object): Object                                                              | [Official Documentation](https://developer.servicenow.com/app.do#!/api_doc?v=jakarta&id=r_GSPS-getWidget_S__O) Returns a widget model for embedding a widget inside another widget. |
-| getKBRecord(): Unknown                                                                                       | Not documented |
-| getKBCount(): Unknown                                                                                        | Not documented |
-| getKBCategoryArticles(): Unknown                                                                             | Not documented |
+| getKBRecord(): Unknown                                                                                       | Not documented - Returns the portal's KB record where the workflow state is published. |
+| getKBCount(): Unknown                                                                                        | Not documented - Returns the number of Knowledge Base articles. |
+| getKBCategoryArticles(): Unknown                                                                             | Not documented - Returns KB articles in the specified category and its subcategories.  Pass 'limit' to limit the number of articles returned. |
 | getKBTopicArticles(): Unknown                                                                                | Not documented |
-| getKBTopCategoryID(): Unknown                                                                                | Not documented |
-| getKBSiblingCategories(): Unknown                                                                            | Not documented |
+| getKBTopCategoryID(): Unknown                                                                                | Not documented - Returns the top category in the hierarchy containing the specified category. |
+| getKBSiblingCategories(): Unknown                                                                            | Not documented - Returns KB categories with same parent as the specified category.|
 | getSCRecord(): Object                                                                                        | Returns sc_cat_item record for the portal's catalog with sys_class_name != sc_cat_item_wizard and active = true in the query. GlideRecord returned has not yet triggered the query. |
-| showCatalogPrices(): Unknown                                                                                 | Not documented |
+| showCatalogPrices(): Unknown                                                                                 | Not documented - Is an object|
 | saveVariables(): Unknown                                                                                     | Not documented |
 | buildThemeVariableModel(): Unknown                                                                           | Not documented |
-| getVariablesArray(): Unknown                                                                                 | Not documented |
-| getWidgetFromInstance(): Unknown                                                                             | Not documented |
-| getRecordVariablesArray(): Unknown                                                                           | Not documented |
-| getFilterBreadcrumbs(): Unknown                                                                              | Not documented |
+| getVariablesArray(): Unknown                                                                                 | Not documented - Returns the tables variables as an object.  |
+| getWidgetFromInstance(): Unknown                                                                             | Not documented - Returns a widget from the specified widget instance. |
+| getRecordVariablesArray(): Unknown                                                                           | Not documented - Returns the records variables. |
+| getFilterBreadcrumbs(): Unknown                                                                              | Not documented - Returns an array of objects where each object contains the breadcrumb label, value, and flags for if fixed and if removed|
 | logStat(String type, String table, String id, *opt String comments*): void                                   | Create a new entry in the `sp_log` table with a table name, a record sys_id from that name, and some type and optional comments. Handy for doing things like logging searches or visits to pages, etc. |
-| getInstanceRecord(): Unknown                                                                                 | Not documented |
-| log(): Unknown                                                                                               | Not documented |
-| saveRecord(): Unknown                                                                                        | Not documented |
-| logSearch(): Unknown                                                                                         | Not documented |
+| getInstanceRecord(): Unknown                                                                                 | Not documented - Returns the widget instances GlideRecord|
+| log(): Unknown                                                                                               | Not documented - Sends the specified message to the log console. |
+| saveRecord(): Unknown                                                                                        | Not documented - Saves or updates the current record. |
+| logSearch(): Unknown                                                                                         | Not documented - Adds a record to the Service Portal Statistics logs. |
 
 
 
